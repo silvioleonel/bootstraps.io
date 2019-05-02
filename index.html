@@ -2,6 +2,12 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>Site oficial Barcelona</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700|Pacifico' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
@@ -23,10 +29,11 @@
         </ul>
     </nav>
 
+
     <header>
         <h1>SITE DO BARCELONA OFICIAL</h1>
         <p>"Mais que um clube"</p>
-        <a href="#sobre" class="botao">VER MAIS</a>
+        <a href="#sobre" class="button">VER MAIS</a>
     </header>
 
     <section id="sobre">
@@ -36,7 +43,9 @@
              Ao contrário das principais equipes de futebol, os próprios torcedores são
              quem operam o funcionamento do clube, motivo pelo qual utiliza o lema
              Més que un club" (Mais que um clube) </p>
-        <a href="#contato" class="botao">ENTRE EM CONTATO</a>
+             <div class="container">
+        <a href="#contato" role="button"class="btn btn-info">ENTRE EM CONTATO</a>
+      </div>
     </section>
 
     <section id="servicos">
@@ -72,17 +81,18 @@
         </div>
     </section>
 
-    <h1>Login</h1>
+  <h1>Login</h1>
 <form id="meuFormulario" action="pagina2.html">
-</div>
-Usuario:<br>
-<input type="text" name="usuario" value="" id="usuario">
-<br>
-Senha:<br>
-<input type="password" name="senha" value="" id="senha">
-<br><br>
-<button>Entrar</button>
-</form>
+    <div class="form-group">
+      <label for="usuario">usuario:</label>
+      <input type="text" class="form-control" id="usuario" name="usuario" value="" placeholder="escrever usuario">
+    </div>
+    <div class="form-group">
+      <label for="Password">Password:</label>
+      <input type="password" class="form-control" id="senha" value="" name="senha" placeholder="Enter password" >
+    </div>
+    <button class="btn btn-primary">Entra</button>
+  </form>
 
     <footer>
         <p>Desenvolvido por Silvio Lufupa</p>
