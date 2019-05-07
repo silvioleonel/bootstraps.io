@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Site oficial Barcelona</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700|Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script> alert("BEM VINDO A PAGINA OFICIAL DO BARCELONA, APERTE ==> OK ")</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <nav>
+        <img src="img/logo.png" class="alinhaim">
+        <ul>
+            <li><a href="#sobre">SOBRE</a></li>
+            <li><a href="#servicos">ADEPTOS</a></li>
+            <li><a href="#pictures">FOTOS</a></li>
+            <li><a href="#contato">CONTATO</a></li>
+        </ul>
+    </nav>
+
+
+    <header>
+        <h1>SITE DO BARCELONA OFICIAL</h1>
+        <p>"Mais que um clube"</p>
+        <a href="#sobre" class="button">VER MAIS</a>
+    </header>
+
+    <section id="sobre">
+        <h2>SOBRE</h2>
+        <p>Fundado em 1899 por um grupo de futebolistas suíços, ingleses e catalães .
+            O clube se tornou um símbolo da cultura catalã e do nacionalismo catalão.
+             Ao contrário das principais equipes de futebol, os próprios torcedores são
+             quem operam o funcionamento do clube, motivo pelo qual utiliza o lema
+             Més que un club" (Mais que um clube) </p>
+             <div class="container">
+        <a href="#contato" role="button"class="btn btn-info">ENTRE EM CONTATO</a>
+      </div>
+    </section>
+
+    <section id="servicos">
+        <div>
+            <img src="img/coracao.png" alt="Coração">
+            <h3>Adeptos</h3>
+            <p>Manda email pra nós e faça parte do fã clube do Barcelona.
+                barcelonaoficial@hotmail.com
+            </p>
+        </div>
+    </section>
+
+    <section id="pictures">
+        <h2 class="centralizar">FOTOS</h2>
+        <img src="img/im1.jpg">
+        <img src="img/im7.jpg">
+        <img src="img/im8.jpg">
+        <img src="img/im5.jpg">
+
+    </section>
+
+    <section id="contato">
+        <h2>CONTATO</h2>
+        <p>Entre em contato conosco.</p>
+        <div>
+            <img src="img/fone.png" alt="fone">
+            <p><a href="tel:xx11111111">(11) 6666666</a></p>
+        </div>
+
+        <div>
+            <img src="img/contato.png" alt="email">
+            <p><a href="">barcelonaoficial@hotmail.com</a></p>
+        </div>
+    </section>
+
+  <h1>Login</h1>
+<form id="meuFormulario" action="pagina2.html">
+    <div class="form-group">
+      <label for="usuario">usuario:</label>
+      <input type="text" class="form-control" id="usuario" name="usuario" value="" placeholder="escrever usuario">
+    </div>
+    <div class="form-group">
+      <label for="Password">Password:</label>
+      <input type="password" class="form-control" id="senha" value="" name="senha" placeholder="Enter password" >
+    </div>
+    <button class="btn btn-primary">Entra</button>
+  </form>
+
+  <div class="container mt-3">
+  <h2>caso queira conhecer outro site</h2>
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    enviar
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h1>Teste API</h1>
+
+
+
+  <form name="form1" id="form1">
+
+    URL:
+
+    <input type="text" id="endereco" name="endereco">
+
+    <br>
+
+    <input type="submit" value="ENVIAR">
+
+  </form>
+
+  <br><br>
+
+
+
+
+
+  <p id="p1"></p>
+
+  <p id="p2"></p>
+
+  <img id="p3" src="" />
+
+  <p id="p4"></p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+    <footer>
+        <p>Desenvolvido por Silvio Lufupa</p>
+    </footer>
+
+
+
+    <script>
+    $(document).ready(function(){
+      $('#meuFormulario').on('submit', function(e){
+              e.preventDefault();
+              var len1 = $('#usuario').val();
+              var len2 = $('#senha').val();
+              if (len1 == 'elsio' && len2 == '123') {
+                  localStorage.setItem("usuario", $('#usuario').val());
+                  localStorage.setItem("senha", $('#senha').val());
+                  this.submit();
+              }else{
+                alert("Acesso NEGADO!!!")
+              }
+          });
+    });
+
+
+
+        $(document).ready(function() {
+
+
+
+          $('#form1').on('submit', function(e) {
+
+            e.preventDefault();
+
+
+
+            var api_url = 'https://api.linkpreview.net'
+
+            var key = '5ccb9525ad6e74755159c3ffa27fa10e40287ac64f332' // real
+
+            $.ajax({
+
+              url: api_url + "?key=" + key + "&q=" + $("#endereco").val(),
+
+              contentType: "application/json",
+
+              dataType: 'json',
+
+              success: function(result) {
+
+                $("#p1").text(result.title);
+
+                $("#p2").text(result.description);
+
+                $('#p3').attr('src', result.image);
+
+                $("#p4").text(result.url);
+
+              }
+
+            });
+
+
+
+          });
+
+
+
+        });
+
+    </script>
+
+</body>
+</html>
